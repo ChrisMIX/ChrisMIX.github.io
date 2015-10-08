@@ -1,6 +1,6 @@
-![wireframe-index](/week2/ChrisMIX.github.io/images/wireframe-index.png)
+![wireframe-index](/ChrisMIX.github.io/images/wireframe-index.png)
 
-![wireframe-index](/week2/ChrisMIX.github.io/images/wireframe-blog-index.png)
+![wireframe-index](/ChrisMIX.github.io/images/wireframe-blog-index.png)
 
 **What is a wireframe?**
 A wireframe is a schematic for website building, and gives you a basic idea of the design you want. It's essentially an outline for an HTML coding project.
