@@ -1,0 +1,9 @@
+html {
+  background-color: #99F8FF;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+a {
+  padding: 0px 60px;
+  display: inline-block;
+}
