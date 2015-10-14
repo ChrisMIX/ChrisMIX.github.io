@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../stylesheets/default.css"/>
+         <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css"/>
+         <title> ids and classes</title>
+    </head>
+    <body>
+        <div>
+            <h1>Classes, IDs, and Their Inherent Differences</h1>
+            <h2>10/14/15</h2>
+            <p>
+                In html we have tags to separate content like  p, title, div, and others. They are important for the purpose of defining where each piece of your content ends and begins. CSS allows us to add specific design preferences and specify them by tag. Tags like these are suitable for many situations, but what if we want to target a specific section of code? What if there are multiple iterations of the same tag, but we only want to target one specific instance of it? This point is where we need classes and ids. They both accomplish the same task, but they have different uses and quirks. To understand the situation better, let's look at an example.
+            </p>
+            <p>
+                Alright, so let's consider a scenario where we have two tags with different content, like so...
+            </p>
+            <p class="codeblock">
+                &lt;div&gt;This content says stuff!&lt;/div&gt;
+                <br>
+                &lt;div&gt;This content says different stuff!&lt;/div&gt;
+            </p>
+            <p>
+                Any CSS you write concerning anything in a div tag will apply to both pieces of code. How do we change it so it applies to just the first tag? Well, there are two different solutions to this problem, but we will address them one at a time. First let's talk about IDs. IDs are unique, as the name would possibly imply. They can only be used once. The code actually will not run if they are used on multiple items, so keep that in mind. Now as far as your syntax goes, you have to write the id inside of the div tag you want to single out. The CSS code you write will have it's own specific syntax as well.
+            </p>
+
+            <p>
+                Imagine a scenario where we want to change the font in the first div tag to Arial, but not the second one. This is a bit of a weird request, but CSS can help accomplish it! We will have to give our class a name (we will use arial for convenience sake) and then utilize the appropriate syntax to make the change we want happen. Now here's what our code should look like...
+            </p>
+
+            <p class="codeblock">
+                &lt;div id="arial"&gt;This content says stuff!&lt;/div&gt;
+            <br>
+                &lt;div&gt;This content says different stuff!&lt;/div&gt;
+            </p>
+
+            <p> Now the matching CSS should look like this...
+            </p>
+
+            <p class="codeblock">
+                #arial{
+                <br>
+                font-family: Arial;
+                <br>
+            }
+
+            </p>
+
+            <p>
+                Now that you understand how ids are used, we can talk about classes. Consider the same problem we just talked about, but now we decide we want both div tags to have arial font. That's not a problem with a class! Classes can be used as many times as we see fit, as long as we use the proper syntax. It looks a little like this...
+            </p>
+
+            <p class="codeblock">
+                &lt;div class="new arial"&gt;This content says stuff!&lt;/div&gt;
+            <br>
+                &lt;div class="new arial"&gt;This content says different stuff!&lt;/div&gt;
+            </p>
+
+            <p>
+                This time the matching CSS should look like this...
+            </p>
+
+            <p class="codeblock">
+                .new arial{
+                <br>
+                font-family: Arial;
+                <br>
+            }
+            </p>
+
+            <p>
+                The difference here is small as far as syntax goes, but the uses of classes and ids vary much more. IDs can only be used once, while classes can be used any specified number of times. Think of it in terms of bar codes and serial numbers. Similar products share a common barcode, but each have a unique serial number.
+            </p>
+
+            <p>
+                The final thing worth mentioning on this topic is that though IDs and classes seem to be at odds with each other, you can use both on the same item if you wish. This helps a great deal in separating out code elements even further!
+            </p>
+        </div>
+        <footer><p></p></footer>
+    </body>
+
+</html>
