@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../stylesheets/default.css"/>
+         <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css"/>
+         <title> Arrays and Hashes</title>
+    </head>
+    <body>
+        <div>
+            <h1>Arrays or Hashes? Which to Use When</h1>
+            <h2>10/22/15</h2>
+            <p>
+                In ruby we have many ways of storing data. Variables let us store a single item to have for later use like so...
+
+                <p class ="codeblock">variable_name = variable_data</p>
+
+                What if we want to store multiple things in one place? That is where arrays and hashes come in.
+
+
+            </p>
+            <p>
+                To start, we will first be talking about arrays. Let's consider a scenario where we want to store the numbers 1 through 10 in the same place. An array can accomplish this just fine. Observe!
+            </p>
+            <p class="codeblock">
+                1_to_10 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+            </p>
+            <p>
+                That's all it takes to create our array. Now the information is stored and we can reference any part of the array whenever we choose. If we decide we want to use some of this data, we have to utilize something called an index number. This is an inherent characteristic each element of an array has, though they are prone to change. The proper syntax for this is as follows...
+            </p>
+
+            <p class="codeblock">
+                1_to_10[0]
+
+            </p>
+
+            <p>
+                In this case we grabbed the first element from the array, 1. That's the thing to note with the index numbers: they start with 0, not 1. Thus the second array element is index 1, the third is index 2, and so on. The next thing that we will be talking about regarding arrays is iteration. Iteration is an idea that lets you apply a specific instruction to every element of the array. Let's think of a scenario where we want to simply return each array element to us. Check this syntax out below, and I will explain further.
+            </p>
+
+            <p class="codeblock">
+                1_to_10.each do |x|
+            <br>
+                puts x
+            <br>
+                end
+            </p>
+
+            <p> What I wrote there uses a couple new things, so let me explain. ".each" is a common iterator that lets you do something to each array element. We need to follow each with "do" and a set of lineblocks containing a variable (x in this case). We are then able to puts each element, or each x in this case. That is how you iterate over arrays.
+            </p>
+
+            <p>
+                So arrays are a pretty useful tool, but what if we want to list items and create our own custom index values? That is where hashes come in. Let's imagine the problem from earlier where we list the numbers one through ten. Check this code out...
+
+            </p>
+
+            <p class="codeblock">
+               1_to_10 = {
+               <br>
+               :one => 1,
+               <br>
+               :two => 2,
+               <br>
+               :three => 3,
+               <br>
+               :four => 4,
+               <br>
+               :five => 5,
+               <br>
+               :six => 6,
+               <br>
+               :seven => 7,
+               <br>
+               :eight => 8,
+               <br>
+               :nine => 9,
+               <br>
+               :ten => 10,
+               <br>
+
+           }
+
+            </p>
+
+            <p>
+                So I just through a lot out there at once, but let me explain. Hashes are contained within {} brackets instead of []. The next thing to look at is our definitions, which are a little longer. the first item is the key, which for all intents and purposes is the same as an index number. The key allows use to pull a matching value, which just so happens to be the data on the right. Between a key and value lies the rocket, =>, which is necessary for syntax purposes. This style of writing hashes is appropriately called "hash rocket style."
+                The nexxt thing we will look at is hash iteration, and then we will consider the benefits of hashes vs arrays. Check the next code block below...
+            </p>
+
+            <p class="codeblock">
+                1_to_10.each do |x, y|
+            <br>
+                puts x
+                puts y
+                <br>
+                end
+            </p>
+
+            <p>
+                This time iteration is fairly similar, aside from one thing. We have two variables now within the lineblocks. That is because our keys are customized, so ruby devised a way to apply directions to those if we wish. in addition to values. Now that we have a good enough understanding of hashes and arrays, let's discuss the pros and cons.
+            </p>
+
+            <p>
+                Arrays are great if you can use them, because they don't require too much syntax, and the potential for mistakes in your code is lessened. The problem with them is that the index number does not change, despite the fact that the order of elements can and will depending on the method or program. That is why hashes are so useful. You create the keys yourself, and they always refer to the same value. The problem with the hash is there is a lot more to type in order to have that extra security within your code. Ultimately if arrays can be used, use them. The thing is that hashes added features mean you will likely be using them more. They do everything an array does, but better. That means you won't ever really go wrong with a hash, aside from the added syntax.
+            </p>
+
+            <p>
+                Just like with IDs and classes, you can use arrays and hashes in the same program. The only thing is that at the current moment I can't think of a reason why you would need to do so.
+            </p>
+        </div>
+        <footer><p></p></footer>
+    </body>
+
+</html>
