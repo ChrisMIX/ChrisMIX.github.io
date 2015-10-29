@@ -13,3 +13,29 @@ h1{
 
   font-size: 31 px;
 }
+
+.button {
+   border: 2px solid #000000;
+   background: #000000;
+   padding: 2px 4px;
+   border-radius: 7px;
+   color: white;
+   font-size: 24px;
+   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+
+.button:hover {
+   border: 2px solid #0a3c59;
+   background: white;
+   color: black;
+   }
+
+   nav{
+    text-align: center;
+   }
+
+   footer{
+    text-align: center;
+   }
