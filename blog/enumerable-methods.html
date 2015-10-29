@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../stylesheets/default.css"/>
+        <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css"/>
+         <title> Chris' Blog Post</title>
+    </head>
+
+    <nav>
+
+<a href='https://ChrisMIX.github.io' class='button'>Home</a>
+
+    <a href= https://chrismix.github.io/about_me/index.html class='button'>
+    About Me
+    </a>
+
+    <a href= https://chrismix.github.io/blog/index.html class='button'>
+    Blog
+    </a>
+
+    <a href= https://chrismix.github.io class='button'>
+    Projects
+    </a>
+
+    <a href= https://chrismix.github.io class='button'>
+    Resume
+    </a>
+
+  </nav>
+  <hr>
+
+    <body>
+        <div>
+            <h1>The Incredible Enumerable Methodical Map</h1>
+            <h4>10/29/15</h4>
+            <p>
+                Hey all. This time we are here to talk about a very important enumerable method called map. Now there isn't too much to say about this one, but it is a very powerful tool. As always, I will provide an example to help nail down the idea.
+            </p>
+
+            <p>
+                Alright so to start this explanation it is important to note that map is a method that primarily works with arrays. The way map works is that you can pass a codeblock to it as well as an array, and it will apply the codeblock to each array element. Consider the following example: I have a list of numbers and I want each one to be multiplied by 10. This is a fairly simple request with map. Take a look at this block of code...
+            </p>
+
+            <p class="codeblock">
+                array = [1, 2, 3, 4, 5]
+                <br>
+                array.map {|x| x * 10}
+            </p>
+
+            <p>
+                It is important to note that you can also use do and end instead of the curly brackets. Now you might be thinking, "How is this any different from using each"? Well, I will tell you just that. If you tried using each for this task, your return would be...
+            </p>
+
+            <p class = "codeblock">
+                [1, 2, 3, 4, 5]
+            </p>
+
+            <p>
+                Your return from using map would be...
+            </p>
+
+            <p class = "codeblock">
+                [10, 20, 30, 40, 50]
+            </p>
+
+            <p>
+                Notice that each doesn't even give us what we asked for. That's because each does the task we ask for, but it doesn't chaneg the original array. Map takes our directions and returns to us the brand new array. Each is used more for printing things rather than changing anything.
+            </p>
+            <p> Now that pretty much covers the explanation on map, but before we finish I want to leave a couple more interesting examples to illustrate the cool things you can do with this method.
+            </p>
+
+            <p>
+                Let's consider two more examples. In the first, we will write a map statement that takes each element of the array and deletes each element individually. In the second method we will add 1 to each array element. The code for those map statements would look like this...
+            </p>
+
+            <p class ="codeblock">
+                array = [1, 2, 3, 4, 5]
+                <br>
+                array.map {|x| x.delete}
+            </p>
+
+            <p class ="codeblock">
+                array = [1, 2, 3, 4, 5]
+                <br>
+                array.map {|x| x + 1}
+            </p>
+
+            <p>
+                The results from these would be an empty array, and the array [2, 3, 4, 5, 6]. Now that pretty much covers the discussion on map. If you have any questions, feel free to contact me.
+            </p>
+
+        </div>
+    </body>
+    <hr>
+  <footer>
+        <a href= "https://twitter.com/ChrisMIKS"><img src="https://raw.githubusercontent.com/ChrisMIX/ChrisMIX.github.io/master/images/twitter.png" /></a>
+
+        <a href= "https://facebook.com/miklius"><img src="https://raw.githubusercontent.com/ChrisMIX/ChrisMIX.github.io/master/images/facebook2.png" /></a>
+
+        <a href= "https://github.com/ChrisMIX"><img src="https://raw.githubusercontent.com/ChrisMIX/ChrisMIX.github.io/master/images/github10.png" /></a>
+
+        <a href= "mailto:cmiklius@gmail.com"><img src="https://raw.githubusercontent.com/ChrisMIX/ChrisMIX.github.io/master/images/logotype181.png" /></a>
+
+      </footer>
+
+</html>
