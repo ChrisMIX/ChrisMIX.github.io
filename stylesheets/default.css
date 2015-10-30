@@ -22,7 +22,7 @@ html {
    font-size: 24px;
    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
    text-decoration: none;
-   vertical-align: middle;
+
    }
 
 .button:hover {
@@ -34,3 +34,4 @@ html {
 p{
   text-align: left;
 }
+
