@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../stylesheets/default.css"/>
+           <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css"/>
+        <link rel="shortcut icon" href="https://raw.githubusercontent.com/ChrisMIX/ChrisMIX.github.io/master/favicon.ico" type="image/x-icon" />
+         <title> Chris' Blog Post</title>
+    </head>
+
+    <nav>
+
+<a href='https://ChrisMIX.github.io' class='button'>Home</a>
+
+    <a href= https://chrismix.github.io/about_me/index.html class='button'>
+    About Me
+    </a>
+
+    <a href= https://chrismix.github.io/blog/index.html class='button'>
+    Blog
+    </a>
+
+    <a href= https://chrismix.github.io class='button'>
+    Projects
+    </a>
+
+    <a href= https://chrismix.github.io class='button'>
+    Resume
+    </a>
+
+  </nav>
+  <hr>
+
+    <body>
+        <div>
+            <h1>Let's Get Classy!</h1>
+            <h4>11/4/15</h4>
+            <p>
+                Welcome back to my blog! Today we are talking about something called a class. What can it do? Plenty of cool stuff. Take a look around the room you're in right now. Pick any object you find. In my case, I am typing this up on a laptop, so I'll use that for this explanation. Now what makes my laptop a laptop? You might be thinking of a number of things, like the size, portability, design, or a number of other things. By themselves, these terms and others simply are words. Together, they describe a laptop. That's in a way what a class is all about. They are containers that hold attributes and methods together under one roof. What's inside is individual pieces of what defines that class. Now this may not be making sense yet, so let's go to an example. Check out this code!
+            </p>
+
+            <p class="codeblock">
+                class Laptop
+                <br>
+                def initialize(serial_number, screen_size)
+                <br>
+                <br>
+                @serial_number = serial_number
+                <br>
+                @screen_size = screen_size
+                <br>
+                end
+                <br>
+                end
+            </p>
+            <p>
+                Now quite a few things are going on here, so allow me to explain. A class definition is started by writing class and then the class name capitalized. The initialize method that comes next tells us what the laptop class needs as input. In this case, we have a serial number, and a screen size. That all seems fairly simple, but why the @ symbol? That signifies that these variables are instance variables. Instance variables have a greater scope than your average local variable. Normally variables are only available to use in the context they are created in. With instance variables, they are available for use by any method in that class. This is very helpful when you have data that you want to be used by multple methods. Now something else we need to talk about are instance methods, but first let's look at the next batch of code...
+            </p>
+
+            <p class="codeblock">
+                class Laptop
+                <br>
+                def initialize(serial_number, screen_size)
+                <br>
+                <br>
+                @serial_number = serial_number
+                <br>
+                @screen_size = screen_size
+                <br>
+                end
+                <br>
+                <br>
+                def get_serial_number
+                <br>
+                return @serial_number
+                <br>
+                end
+                <br>
+                end<br><br>
+                macbook = Laptop.new("1234", "13 inches")
+            </p>
+
+            <p>
+                So here we implemented two more things. Notice the new method here called get_serial_number. That is an instance method. What that means is that when you create an instance of the Laptop class, it inherently has that method built in. That means if I call get_serial_number on macbook below, I would get "1234" as a return value. Aside from that, defining a class also is fairly straightforward. You simply type classname.new(parameters). Well that more or less covers classes for now. Until next time!
+            </p>
+        </div>
+        <hr>
+  <footer>
+        <a href= "https://twitter.com/ChrisMIKS"><img src="https://raw.githubusercontent.com/ChrisMIX/ChrisMIX.github.io/master/images/twitter.png" /></a>
+
+        <a href= "https://facebook.com/miklius"><img src="https://raw.githubusercontent.com/ChrisMIX/ChrisMIX.github.io/master/images/facebook2.png" /></a>
+
+        <a href= "https://github.com/ChrisMIX"><img src="https://raw.githubusercontent.com/ChrisMIX/ChrisMIX.github.io/master/images/github10.png" /></a>
+
+        <a href= "mailto:cmiklius@gmail.com"><img src="https://raw.githubusercontent.com/ChrisMIX/ChrisMIX.github.io/master/images/logotype181.png" /></a>
+
+      </footer>
+    </body>
+
+</html>
+
+<!--
+
+
+  -->
