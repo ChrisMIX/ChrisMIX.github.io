@@ -32,10 +32,61 @@
 
     <body>
         <div>
-            <h1>Chris' Blog Post</h1>
+            <h1>Have a Nice Cup of Java</h1>
+            <h4>11/9/15</h4>
             <p>
-                Text goes here...
+                Welcome back! Today I am here to tell you all about Looping in Ruby and Java. At their core, they both accomplish the same tasks. The syntax can differ a bit between the two languages however. Let's consider an example. Imagine we want to write a program that prints phrase "Cool story bro." ten times. We will start by using the while loop for both programs. Check out the following codeblock...
             </p>
+
+            <p class = "codeblock">
+                #Ruby first
+                <br>
+                counter = 1
+                <br>
+                while counter <= 10
+                <br>
+                puts "Cool story bro."
+                <br>
+                counter += 1
+                <br>
+                end
+                <br>
+                <br>
+                //Java Next
+                <br>
+                var counter = 1
+                var statement = "Cool story bro."
+                <br>
+                while (counter <= 10){
+                <br>
+                System.out.println("Cool story bro.")
+                <br>
+                counter++
+                <br>
+                }
+            </p>
+
+            <p> Now both of these will do the same exact things, but they have different ways of doing it. With Java, we first establish our counter. Then we establish our condition that will keep printing the statement we want. We increment our counter and then keep going until the counter hits 11. Ultimately what I described is true for Ruby as well, but the syntax is slightly different. For loops work similarly in both Ruby and Java as well. Take a look...
+            </p>
+
+            <p class = "codeblock">
+                #Ruby
+                <br>
+                for num in 1..10
+                <br>
+                puts "Cool story bro."
+                <br>
+                end
+                <br>
+                <br>
+                //Java
+                <br>
+                for (var counter = 0; counter <= 10; counter++)
+                <br>
+                System.out.println("Cool story bro.");
+            </p>
+
+            <p> Now both of these loops are very shortened versions of the while loops we saw a moment ago. That's why the for loop is used. Java manages to take the already short for loop from Ruby and take one line away on top of it. Java's for loop has three different parameters in parentheses telling the loop what to do. The first defines your counter. The second tells the loop when to stop and the third increments the counter. Aside from that, we just use a print statement. Now you see how the looping process of Java and Ruby really isn't that different. Well that's it for now. Tune in again next week!
         </div>
         <hr>
   <footer>
