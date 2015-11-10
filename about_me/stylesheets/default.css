@@ -32,10 +32,15 @@ h1{
    color: black;
    }
 
-   nav{
-    text-align: center;
-   }
-
    footer{
     text-align: center;
    }
+
+   nav{
+    text-align: center;
+  background-color: white;
+  margin: 0px -12.5%;
+  border: 2px solid black;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
