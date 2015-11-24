@@ -3,16 +3,16 @@ display: inline;
 }
 
 html{
-
   text-align: center;
 }
 
 p{
-
   text-align: left;
 }
 
 .codeblock {
- color: orange;
-  background-color:  black;
+ color: white;
+background-color: black;
+font-family:Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New;
+font-size: 1.25em;
 }
